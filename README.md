@@ -23,7 +23,7 @@ if selected_drink in drinks:
     print(f"You have selected {selected_item['name']}.")
     amount_due = selected_item['price']
     
-    # Prompt user to insert money
+# Prompt user to insert money
     while amount_due > 0:
         try:
             payment = float(input(f"Please insert ${amount_due:.2f}: "))
@@ -32,7 +32,7 @@ if selected_drink in drinks:
                 change = payment - amount_due
                 print(f"Thank you for your purchase! Your change is ${change:.2f}.")
 
-                # Calculate and display change
+# Calculate and show change
                 notes = [50, 20, 10, 5, 2, 1]
                 amount_return = change
 
